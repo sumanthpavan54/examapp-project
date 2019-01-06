@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+{%extends 'examapp/base2.html'%}
+{%block body2_block%}
+<div class="container">
+  <div class="jumbotron">
+    <h3>Brief about the AI in india</h3>
+    <br>
+
+    <form action="" method="post">
+      <!-- <input type="radio" name="options" value="Web Framework">&nbsp Web Framework<br>
+      <input type="radio" name="options" value="Programming Language">&nbsp Programming Language<br>
+      <input type="radio" name="options" value="Server">&nbsp Server<br>
+      <input type="radio" name="options" value="Database">&nbsp Database<br> -->
+      {{form.as_p}}
+      {%csrf_token%}
+
+      <input type="submit" value="submit">
+    </form>
+
+  </div>
+</div>
+{%endblock%}

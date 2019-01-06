@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+{%extends 'examapp/base2.html'%}
+{%block body2_block%}
+<div class="container">
+  <div class="jumbotron">
+    <h3>How many players will be in cricket?</h3>
+    <br>
+    <h4>1  9</h4>
+    <h4>2  11</h4>
+    <h4>3  12</h4>
+    <h4>4  10</h4>
+    <form action="" method="post">
+      <!-- <input type="radio" name="options" value="Web Framework">&nbsp Web Framework<br>
+      <input type="radio" name="options" value="Programming Language">&nbsp Programming Language<br>
+      <input type="radio" name="options" value="Server">&nbsp Server<br>
+      <input type="radio" name="options" value="Database">&nbsp Database<br> -->
+      {{form.as_p}}
+      {%csrf_token%}
+
+      <input type="submit" value="submit">
+    </form>
+
+  </div>
+</div>
+{%endblock%}
